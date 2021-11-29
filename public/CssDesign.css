@@ -1,22 +1,5 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
- body {
+body {
   background-color: rgb(214, 214, 247);
-  font-family: serif;
 }
 
 #FrontPage-Body header img {
@@ -45,7 +28,7 @@
 
 .FrontPage-Search input {
   font-size: 20px;
-  height: 30px;
+  height: 40px;
   width: 450px;
   display: flex;
   margin-left: auto;
@@ -73,6 +56,7 @@
   font-size: 23px;
   color: white;
   background-color: rgb(3, 3, 112);
+  cursor: pointer;
   padding: 5px 15px;
   text-decoration: none;
 }
@@ -81,9 +65,10 @@
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 30px;
+  font-size: 23px;
   color: white;
   background-color: rgb(3, 3, 112);
+  cursor: pointer;
   padding: 5px 15px;
   text-decoration: none;
 }
@@ -150,6 +135,15 @@
   font-size: 18px;
 }
 
+.Login-Article button {
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(214, 214, 247);
+}
+
 .Login-Article input {
   height: 40px;
   width: 300px;
@@ -180,10 +174,6 @@
   margin-right: auto;
   text-align: center;
   font-size: 20px;
-}
-
-.Forgot-Password a:hover {
-  background-color: rgb(214, 214, 247);
 }
 
 .Signup-Article {
@@ -275,7 +265,6 @@
 .Dish-Name {
   font-size: 25px;
   color: rgb(3, 3, 112);
-  padding: 5px 0px 5px 0px;
 }
 
 .Order-Image {
@@ -423,6 +412,7 @@
 
 .Quantity {
   align-items: center;
+  margin-left: 135px;
   padding: 5px 0px 5px 0px;
 }
 
@@ -524,160 +514,4 @@
 .Back-To-Home {
   text-decoration: none;
   font-size: 20px;
-  color: white;
-  background-color: rgb(3, 3, 112);
-  border: 2px solid rgb(3, 3, 112);
-  border-radius: 10px;
-}
-
-.Back-To-Home:hover {
-  cursor: pointer;
-}
-
-.SignUp a:hover {
-  background-color: rgb(3, 3, 112);
-}
-
-.Login-Article .Form-submit {
-  height: 40px;
-  width: 180px;
-  font-size: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: rgb(214, 214, 247);
-}
-
-.Signup-Article-Form .Form-submit {
-  height: 40px;
-  width: 180px;
-  font-size: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: rgb(214, 214, 247);
-}
-
-#Error {
-  display: flex;
-  font-size: 25px;
-  color: red;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-#Sign-Out {
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 23px;
-  color: white;
-  background-color: rgb(3, 3, 112);
-  padding: 5px 15px;
-  text-decoration: none;
-}
-
-#Name {
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 700;
-  font-size: 23px;
-  color: rgb(3, 3, 112);
-  padding: 5px 15px;
-  text-decoration: none;
-}
-
-.Welcome {
-  color: rgb(3, 3, 112);
-  font-size: 80px;
-  font-family: "Brush Script MT", cursive;
-}
-
-.Centered {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
-
-.Up {
-  font-family: "Brush Script MT", cursive;
-  color: white;
-  font-size: 60px;
-}
-
-.In {
-  font-family: "Brush Script MT", cursive;
-  color: white;
-  font-size: 60px;
-}
-
-#UP {
-  color: white;
-  font-size: 45px;
-  font-family: "Brush Script MT", cursive;
-}
-
-#UP:hover {
-  background-color: transparent;
-}
-
-#IN {
-  color: white;
-  font-size: 45px;
-  font-family: "Brush Script MT", cursive;
-}
-
-#IN:hover {
-  background-color: transparent;
-}
-
-.centerit {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Center-It {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-#Admin-Sign-Out {
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 23px;
-  color: white;
-  background-color: rgb(3, 3, 112);
-  padding: 5px 15px;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-
-.Order-Page {
-  width: 500px;
-  height: 300px;
-}
-
-.Row {
-  font-size: 30px;
-  padding: 10px;
-}
-
-.Order-Admin {
-  width: 500px;
-  height: 50px;
-}
-
-.Row-New {
-  font-size: 30px;
-  padding: 10px;
 }

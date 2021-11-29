@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="CssDesign.css" rel="stylesheet" />
+    <title>Checkout</title>
+  </head>
+  <body class="Checkout-Body">
+    <header class="Login-Header">
+      <img src="Cocafe-logo.jpeg" alt="Logo" />
+    </header>
+    <div class="Payment">
+      <form>
+        <div class="COD">
+          <input type="radio" id="COD" name="COD" />
+          <br><br>
+          <label style="color: white;">Cash On Delivery</label> <br />
+        </div>
+      </form>
+    </div>
+    <div class="Proceed-To-Pay">
+      <%= form_with(url: "/orders/#{@current_user.id}", method: "delete") do %>
+      <% sum = params[:payment] %>
+      <%= button_tag("Proceed To Pay ₹ #{sum}", class: "", type: "submit", :value => @current_user.id, :name => "id") %>
+      <% end %>
+    </div>
+  </body>
+</html>

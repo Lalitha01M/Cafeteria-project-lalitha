@@ -1,0 +1,13 @@
+<% Order.order(:date).each do |order| %>
+<% if !order.delivered %>
+<div class="Order-Admin">
+  <%= form_with(url: "/all_orders/#{order.user_id}", method: "put") do %>
+  <div class="Row-New">Current Order To Be Delivered</div>
+  <div class="Row-New">Date of Order: <%= order.date %></div>
+  <div class="Row-New">Order ID: <%= order.id %></div>
+  <%= button_tag("Mark As Delivered", type: "submit", class: "Add-To-Orders", :value => order.user_id, :name => "id") %>
+  <% end %>
+</div>
+<% break %>
+<% end %>
+<% end %>
