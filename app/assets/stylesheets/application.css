@@ -32,7 +32,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #FrontPage-Body header div {
@@ -43,10 +43,14 @@
   margin-right: auto;
 }
 
+.Section-login {
+  display: flex;
+}
+
 .FrontPage-Search input {
   font-size: 20px;
   height: 30px;
-  width: 450px;
+  width: 250px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -79,11 +83,9 @@
 
 .Sign-Up {
   margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 30px;
-  color: white;
-  background-color: rgb(3, 3, 112);
+  color: rgb(27, 30, 197);
+  background-color: rgb(128, 128, 138);
   padding: 5px 15px;
   text-decoration: none;
 }
@@ -129,15 +131,15 @@
 }
 
 .Login-Article {
-  background-color: rgb(3, 3, 112);
-  width: 500px;
+  background-color: rgb(58, 58, 63);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 30px;
   font-size: 30px;
-  border: 2px solid rgb(3, 3, 112);
+  border: 2px solid rgb(10, 10, 10);
   border-radius: 10px;
+  margin-right: 300px;
+  margin-left: 200px;
+
 }
 
 .Login-Article div {
@@ -145,9 +147,10 @@
   color: white;
 }
 
-.Email-Text {
-  color: white;
-  font-size: 18px;
+.Signup-text {
+  color: rgb(19, 6, 54);
+  font-size: 30px;
+  font-family: cursive;
 }
 
 .Login-Article input {
@@ -200,7 +203,7 @@
   margin-right: auto;
 }
 
-.Cocafe-Tag {
+.cafe-Tag {
   font-size: 66px;
   color: rgb(3, 3, 112);
   margin-left: auto;
@@ -213,20 +216,20 @@
 }
 
 .Signup-Article-Form {
-  background-color: rgb(3, 3, 112);
+
   width: 500px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   border: 2px solid rgb(3, 3, 112);
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 15px;
 }
 
 .Signup-Article-Form div {
   padding: 50px 50px 10px 50px;
-  color: white;
+  color: rgb(6, 21, 65);
+  font-size: 30px;
+  font-family: serif;
 }
 
 .Signup-Article-Form input {
@@ -583,7 +586,7 @@
   margin-right: auto;
   font-weight: 700;
   font-size: 23px;
-  color: rgb(3, 3, 112);
+  color: rgb(41, 23, 3);
   padding: 5px 15px;
   text-decoration: none;
 }

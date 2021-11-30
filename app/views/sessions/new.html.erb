@@ -18,27 +18,28 @@
       <div>Log In To Your Account</div>
       <%= form_with url: sessions_path do |form| %>
       <br /><br><br>
-      <span class="Email-Text"> Enter E-Mail Address </span>
-      <br />
+      <span class="Email-Text"> E-Mail: &nbsp;&nbsp;&nbsp;
+
       <%= form.email_field :email, :autofocus => true %>
+      </span>
       <br /><br>
-      <span class="Email-Text"> Enter Password </span>
-      <br />
+      <span class="Email-Text"> Password:
+
       <%= form.password_field :password %>
+      </span>
       <br /><br /><br>
       <%= form.submit "Log In", class: "Form-submit" %>
       <br /><br /><br>
       <span class="SignUp">
         New To CoCafe?
         <%= link_to "Sign Up Here!", new_user_path %>
+        <div class="Forgot-Password">
+           <a href="#">Forgot Password?</a>
+        </div>
       </span
       >
   <% end %>
-      <br /><br />
-    </article>
-    <br />
-    <div class="Forgot-Password">
-      <a href="#">Forgot Password?</a>
-    </div>
+   </article>
+
   </body>
 </html>
